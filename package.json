@@ -1,0 +1,29 @@
+{ 
+  "name": "twitter-data-journalism", 
+  "version": "v0.1.18",
+  "description": "Twitter API client library for node.js", 
+  "keywords": ["twitter","streaming","oauth"], 
+  "homepage": "https://github.com/jdub/node-twitter", 
+  "author": "jdub",
+  "licenses":
+    [ 
+      { "type": "MIT", 
+        "url": "http://github.com/jdub/node-twitter/raw/master/LICENSE"
+      }
+    ], 
+    "repository": { 
+      "type": "git",
+      "url": "http://github.com/jdub/node-twitter.git"
+    },
+    "dependencies": {
+      "express": "~4.5.1",
+      "oauth": ">=0.8.4",
+      "cookies": ">=0.1.6",
+      "keygrip": ">=0.1.7",
+      "qs" : "*",
+      "body-parser": "~1.4.2",
+      "method-override": "~2.0.2",
+      "path": "^0.4.9"
+    }, 
+    "engines": ["node >=0.2.0"]
+}
