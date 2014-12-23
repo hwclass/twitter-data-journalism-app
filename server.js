@@ -26,12 +26,13 @@ require('./config/routes')(app); // pass our application into our routes
 app.listen(config.port);
 console.log('Magic happens on port ' + config.port); // shoutout to the user
 
-var config = JSON.parse(fs.readFileSync('properties.json', encoding="ascii"));
-Twitter = require('./lib/twitter');
+//var config = JSON.parse(fs.readFileSync('properties.json', encoding="ascii"));
 
-console.log(config);
+//Twitter = require('./lib/twitter');
 
-var twitter = new Twitter(config);
+//console.log(config);
+
+//var twitter = new Twitter(config);
 
 /*
 var util = require('util'),
@@ -100,13 +101,12 @@ twitter.getUserTimeline({"screen_name" : 'cnni', "count" : '1', "hashtags": [ {"
 //   console.log(success);
 // });
 
-twitter.getUserTimeline({ screen_name: 'cnni', count: '1', "entities": { "hashtags": [{"text": "#ISIS", "indices": [0,5]}] } }, error, success);
+//https://api.twitter.com/1.1/search/tweets.json?q=from%3Acnni%20%23ISIS
+
+//twitter.getUserTimeline( { screen_name: 'cnni', count: '2', "entities": { "hashtags": [{"text": "ISIS", "indices": [0,5]}] } }, error, success);
+//-->twitter.getTweetsByHashTag({from : 'cnni'}, 'ISIS', error, success);
 
 // var userMentionsTimeline = twitter.getMentionsTimeline({ count: '10'}, error, success);
 // var userHomeTimeline = twitter.getHomeTimeline({ count: '10'}, error, success);
 // var userRetweets = twitter.getReTweetsOfMe({ count: '10'}, error, success); senin netliğini tyerim!! tertemiz :)
-
-twitter.getTweet({ id: '1111111111'}, error, function (data) {
-  //console.log(data);
-});
 

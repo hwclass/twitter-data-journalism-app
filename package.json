@@ -23,7 +23,8 @@
       "qs" : "*",
       "body-parser": "~1.4.2",
       "method-override": "~2.0.2",
-      "path": "^0.4.9"
+      "path": "^0.4.9",
+      "bower": "~1.3.12"
     }, 
     "engines": ["node >=0.2.0"]
 }
