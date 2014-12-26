@@ -5,9 +5,10 @@
 angular.module('TwitterDataJournalism')
   .factory('UtilityService', function ($http, TweetService) {
     return {
-    	getTweetsByHashTag : function(callback) {
-    		TweetService.getTweetsByHashTag(function(data) {
-    	    callback(data);
+    	getTweetsByHashTag : function(screenName, hashTag, callback) {
+        TweetService.getTweetsByHashTag(screenName, hashTag, function(data) {
+          console.log('Utility Service getTweetsByHashTag: ' + data);
+          callback(data);
     	  });
     	}
     }

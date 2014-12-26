@@ -1,15 +1,11 @@
 'use strict';
 
-var testCtrl= require('../app/controllers/test');
 var tweetCtrl= require('../app/controllers/tweet');
 
 module.exports = function(app) {
 
-	//test routes-----------------------------------------------------------
-  app.get('/api/test', testCtrl.getTest);
-
   //tweet routes-----------------------------------------------------------
-  app.post('api/tweets', tweetCtrl.getTweetsByHashTag);
+  app.get('/api/tweets/hashtag/:hashtag', tweetCtrl.getTweetsByHashTag);
 
   // application -------------------------------------------------------------
   app.all('/api/*', function(req, res) {

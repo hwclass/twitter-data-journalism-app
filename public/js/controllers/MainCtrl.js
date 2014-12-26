@@ -5,11 +5,14 @@
  */
 
 angular.module('TwitterDataJournalism')
-  .controller('MainCtrl', function MainCtrl ($scope, $routeParams) {
+  .controller('MainCtrl', function MainCtrl ($scope, $routeParams, UtilityService) {
     
     'use strict';
 
-    console.log('main controller');
+    UtilityService.getTweetsByHashTag('cnni', 'ISIS', function (data) {
+      console.log('MAIN CONTROLLER');
+      console.dir(data);
+    });
 
     $scope.testVar = ''
 
