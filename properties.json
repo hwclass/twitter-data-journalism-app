@@ -1,7 +1,7 @@
 {
-    "consumerKey": "3wpG6rCoHVsjXsDUTGLabI54m",
-    "consumerSecret": "AnAaLDFaQoPHAl5QXOJ1rmzG2USopDyrgnmCd44SKYhYJkhsaC",
-    "accessToken": "1055147588-AY6Srwc7pZTysQq8myhS0Z2XkLiJjFfjPslgU9Q",
-    "accessTokenSecret": "BhLW0KNAhDMugD4A2LZKBJFDdLQpr4MJ5LFUNHF5Mfbbt",
+    "consumerKey": "",
+    "consumerSecret": "",
+    "accessToken": "",
+    "accessTokenSecret": "",
     "callBackUrl": "/"
 }
